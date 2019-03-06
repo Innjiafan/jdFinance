@@ -136,9 +136,9 @@ export default {
           height: 45px;
         }
         h4{
-          font-size: 13px;
+          font-size: 12px;
           text-align: center;
-          color: #666;
+          color: #333;
           margin-top: 6px;
           white-space: nowrap;
           text-overflow: ellipsis;

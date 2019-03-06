@@ -31,7 +31,10 @@ export default {
                     loop: true,
                     pagination: {
                         el: ".swiper-pagination",
+                        bulletClass : 'my-bullet',
+                        bulletActiveClass: 'my-bullet-active',
                     },
+
                     notNextTick: false,
                 }
             },
@@ -48,4 +51,16 @@ export default {
 
 <style lang="css">
   @import "~swiper/dist/css/swiper.css";
+  .my-bullet{
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #fff;
+    opacity: 0.2;
+    margin-right: 4px;
+  }
+  .my-bullet-active{
+    opacity: 1;
+  }
 </style>

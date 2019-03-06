@@ -3,7 +3,7 @@
         <Head title="借钱"/>
         <Adverse />
         <Ycyq />
-        <Ycyq />
+        <Baitiao />
         <Jphd />
         <Navbar />
     </div>
@@ -13,6 +13,7 @@
 import Head from "../public/header.vue"
 import Adverse from "./adverse.vue"
 import Ycyq from "./ycyq.vue"
+import Baitiao from "./baitiao.vue"
 import Jphd from "./jphd.vue"
 import Navbar from "../public/navbar.vue"
 export default {
@@ -20,6 +21,7 @@ export default {
         Head,
         Navbar,
         Ycyq,
+        Baitiao,
         Jphd,
         Adverse
     },

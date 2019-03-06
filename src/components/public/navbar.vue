@@ -72,16 +72,12 @@ export default {
           margin: 6px 0 3px 0;
         }
         p{
-          color:#B1B4BB !important;
+          color:#B1B4BB;
           font-size: 11px;
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
 
-        }
-
-        p.blue{
-          color:#508CEE !important;
         }
       }
     }

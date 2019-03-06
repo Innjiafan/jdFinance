@@ -6,6 +6,7 @@
                 <router-link :to="{ name: item.href}">
                     <img :src="item.img" :alt="item.title">
                     <h4>{{ item.title }}</h4>
+                    <p>{{ item.content }}</p>
                 </router-link>
             </div>
         </section>
@@ -45,6 +46,7 @@ export default {
                 href: "home",
                 img: "//img12.360buyimg.com/jrpmobile/jfs/t3991/64/2521945388/12110/93c0139/58d1e462Ncf294123.png?width=132&height=132",
                 title: "优惠券",
+                content:"30-10券"
                 }, {
                     href: "home2",
                     img: "//img12.360buyimg.com/jrpmobile/jfs/t5590/252/875247023/17343/946aa72c/59224650N0f7ffc92.png?width=132&height=132",
@@ -83,6 +85,7 @@ export default {
 <style lang="scss" module>
   @import "../../css/element.scss";
   .slider{
+    margin-top: 44px;
     img{
       width: 100%;
     }
@@ -91,7 +94,6 @@ export default {
     @include list(row);
     background: #fff;
     padding-top: 20px;
-    padding-bottom: 20px;
     justify-content: space-around;
     a{
       text-decoration: none;
@@ -108,6 +110,14 @@ export default {
         text-align: center;
         color: #666;
         margin-top: 6px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      p{
+        font-size: 11px;
+        text-align: center;
+        color: #ff0000 !important;
+        margin-top: 8px;
         white-space: nowrap;
         text-overflow: ellipsis;
       }
